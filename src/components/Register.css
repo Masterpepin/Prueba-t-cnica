@@ -1,129 +1,128 @@
 .register-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../assets/Fondo_Login.jpg');
-    background-size: 70% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .register-box {
-    background-color: #434d56c4;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin-right: 22rem;
-    text-align: right;
-  }
-  
-  .register-box img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-    margin-right: 4.5rem;
-  }
-  
-  .input-group {
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 8px 40px 8px 8px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-sizing: border-box;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  .input-group input::placeholder {
-    color: #aaa;
-    opacity: 1;
-  }
-  
-  .input-group .iconuser {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/circulo-de-usuario.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-  }
-  
-  .input-group .iconlock {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/candado_icono.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-  }
-  
-  .input-group input:focus + .iconuser,
-  .input-group input:focus + .iconlock {
-    display: none;
-  }
-  .register-box form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/Fondo_Login.jpg');
+  background-size: 70% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  .register-box .input-group{
-    width: 100%;
-  }
-  .register-box button {
-    width: 40%;
-    padding: 6px;  
-    background-color: #9c9c9c;
-    color: white;
-    border: none;
-    border-radius: 20px; 
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    font-size: .8rem;
-  }
-  
-  .register-box button:hover {
-    background-color: #7a7a7a;
-    box-shadow: none;
-  }
-  
-  .loader {
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    animation: spin 1s linear infinite; 
-    margin-top: 1rem;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: 1rem;
-  }
-  
+.register-box {
+  background-color: #434d56c4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-right: 22rem;
+  text-align: right;
+}
+
+.register-box img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 4.5rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px 40px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+  text-align: center;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.input-group .iconuser {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/circulo-de-usuario.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.input-group .iconlock {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/candado_icono.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.input-group input:focus + .iconuser,
+.input-group input:focus + .iconlock {
+  display: none;
+}
+.register-box form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-box .input-group{
+  width: 100%;
+}
+.register-box button {
+  width: 40%;
+  padding: 6px;  
+  background-color: #9c9c9c;
+  color: white;
+  border: none;
+  border-radius: 20px; 
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-size: .8rem;
+}
+
+.register-box button:hover {
+  background-color: #7a7a7a;
+  box-shadow: none;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation: spin 1s linear infinite; 
+  margin-top: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}

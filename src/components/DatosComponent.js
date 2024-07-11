@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { obtenerDatos } from '../api';
+import Table from './Table';
 
 const DatosComponent = () => {
   const [datos, setDatos] = useState(null);
@@ -8,8 +9,8 @@ const DatosComponent = () => {
   useEffect(() => {
     const fetchDatos = async () => {
       try {
-        const data = await obtenerDatos();
-        setDatos(data);
+        const response = await obtenerDatos();
+        setDatos(response.data);
       } catch (err) {
         setError(err.message);
       }
@@ -22,7 +23,7 @@ const DatosComponent = () => {
     <div>
       {error && <p>Error: {error}</p>}
       {datos ? (
-        <pre>{JSON.stringify(datos, null, 2)}</pre>
+        <Table data={datos} />
       ) : (
         <p>Cargando datos...</p>
       )}
