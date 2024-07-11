@@ -1,27 +1,15 @@
-body {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(128, 128, 128, 0.5); 
-    backdrop-filter: blur(10px);
-    z-index: -1;
-}
-
-.login-container {
-    background-image: url('../assets/Fondo_Login.jpg');
-    background-size: 70% auto;
-    background-position: center;
-    background-repeat: no-repeat;
+.register-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100vh;
-}
-
-.login-box {
+    background-image: url('../assets/Fondo_Login.jpg');
+    background-size: 70% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .register-box {
     background-color: #434d56c4;
     padding: 20px;
     border-radius: 12px;
@@ -31,7 +19,7 @@ body {
     text-align: right;
   }
   
-  .login-box img {
+  .register-box img {
     width: 100%;
     max-width: 150px;
     height: auto;
@@ -91,19 +79,17 @@ body {
   .input-group input:focus + .iconlock {
     display: none;
   }
-
-  .login-box form{
+  .register-box form{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .login-box .input-group{
+  .register-box .input-group{
     width: 100%;
   }
-  
-  .login-box button {
-    width: 50%;
+  .register-box button {
+    width: 40%;
     padding: 6px;  
     background-color: #9c9c9c;
     color: white;
@@ -114,30 +100,11 @@ body {
     transition: all 0.3s ease;
     margin-top: 1rem;
     font-size: .8rem;
-    
-}
+  }
   
-  .login-box button:hover {
+  .register-box button:hover {
     background-color: #7a7a7a;
     box-shadow: none;
-  }
-  
-  .links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .links-container a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.875rem;
-    text-align: center;
-  }
-  
-  .links-container a:hover {
-    text-decoration: underline;
   }
   
   .loader {
@@ -146,9 +113,9 @@ body {
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite; 
     margin-top: 1rem;
-  } 
+  }
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -159,3 +126,4 @@ body {
     color: red;
     margin-top: 1rem;
   }
+  
