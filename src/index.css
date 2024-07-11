@@ -5,6 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente */
-  backdrop-filter: blur(10px); /* Efecto de blur */
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }

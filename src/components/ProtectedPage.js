@@ -1,7 +1,5 @@
-// src/components/ProtectedPage.js
-
 import React, { useEffect, useState } from 'react';
-import api from './api'; // Importa la instancia de Axios
+import api from './api';
 
 const ProtectedPage = () => {
   const [userData, setUserData] = useState(null);
@@ -12,7 +10,7 @@ const ProtectedPage = () => {
         const token = localStorage.getItem('token');
         const response = await api.get('/users/me/', {
           headers: {
-            Authorization: `Bearer ${token}`, // Usa el token guardado
+            Authorization: `Bearer ${token}`,
           },
         });
         setUserData(response.data);
