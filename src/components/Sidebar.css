@@ -1,52 +1,94 @@
 .sidebar {
     width: 250px;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #2E3B44;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
   
-  .sidebar-header {
+  .sidebar-top {
+    text-align: center;
     margin-bottom: 20px;
   }
   
-  .menu {
+  .sidebar-image {
+    background-image: url('../assets/logo_blanco.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 200px; 
+    height: 130px; 
+    margin: 0 auto; 
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-icon {
+    background-image: url('../assets/circulo-de-usuario-blanco.png'); 
+    background-size: cover;
+    width: 24px; 
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nav-menu {
+    flex: 1;
+  }
+  
+  .nav-menu ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
-  .menu-item {
-    display: block;
-    padding: 10px 15px;
-    color: #333;
+  .nav-menu li {
+    margin-bottom: 15px;
+  }
+  
+  .nav-link {
+    color: #ecf0f1;
     text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40rem;
   }
   
-  .menu-item:hover {
-    background-color: #ddd;
+  .nav-icon {
+    background-image: url(../assets/pedidos.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
   }
   
-  .logout-button {
-    display: block;
-    padding: 10px 15px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+  .logout-section {
+    margin-top: auto;
   }
   
-  .logout-button:hover {
-    background-color: #ff1a1a;
+  .logout-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
   
-  .profile {
-    margin-top: 20px;
+  .logout-icon {
+    background-image: url('../assets/salida.png'); 
+    background-size: cover;
+    width: 20px; 
+    height: 20px;
+    margin-right: 10px;
   }
   

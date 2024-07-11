@@ -2,47 +2,180 @@
   display: flex;
 }
 
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  background-color: #2E3B44;
+}
+
 .main-content {
-  margin-left: 250px;
+  margin-left: 250px; 
   padding: 20px;
-  width: 100%;
+  width: calc(100% - 250px); 
+  background: linear-gradient(to bottom, #91959E, #ffffff); 
+  height: 100vh; 
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-right: 1rem;
+}
+
+.search-container .header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.search-container .search-bar-container {
+  position: relative;
+}
+
+.search-container .search-bar {
+  flex: 1;
+  margin-left: 2rem;
+  padding: 5px 10px 5px 10px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  width: 50rem; 
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../assets/lupa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 2rem;
+}
+
+.button {
+  background-color: #2E3B44;
+  color: #fff;
+  padding: 8px 15px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  padding-left: 40px; 
+}
+
+.button:hover {
+  background-color: #364652;
+}
+
+.button-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button-filtro .button-icon {
+  background-image: url('../assets/filtrar.png');
+}
+
+.button-vista .button-icon {
+  background-image: url('../assets/ojo.png');
+}
+
+.alerts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.alert {
+  background-color: #f0f0f0;
+  padding: 20px 25px;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.alert:last-child {
+  margin-right: 0;
+}
+
+.alert-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px; 
+  height: 60px; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.alert1 .alert-icon {
+  background-image: url('../assets/pedidos_negro.png');
+}
+
+.alert2 .alert-icon {
+  background-image: url('../assets/reloj_de_arena.png');
+}
+
+.alert3 .alert-icon {
+  background-image: url('../assets/tache.png');
+}
+
+.alert4 .alert-icon {
+  background-image: url('../assets/lista.png');
 }
 
 .orders-table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.orders-table th,
-.orders-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
+.orders-table th, .orders-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
 }
 
-.orders-table tr.en-espera {
-  background-color: #fff3cd;
-}
-
-.orders-table tr.completado {
-  background-color: #d4edda;
-}
-
-.orders-table tr.rechazado {
-  background-color: #f8d7da;
+.orders-table th {
+  background-color: #2E3B44; 
+  color: #fff; 
 }
 
 .card-container {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .card {
-  background: #fff;
+  background-color: #fff;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.error-message {
-  color: red;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: center;
 }
